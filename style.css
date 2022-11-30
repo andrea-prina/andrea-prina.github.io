@@ -40,13 +40,13 @@ body {
     display: block;
 }
 
-.box-body:active {
+.box-body.active {
     cursor: pointer;
     -webkit-animation: box-body 1s forwards ease-in-out;
     animation: box-body 1s forwards ease-in-out;
 }
 
-.box-body:active .img {
+.box-body.active .img {
     opacity: 1;
     z-index: 0;
     transform: translateY(-157px);
@@ -55,27 +55,19 @@ body {
 
 }
 
-.box-body:active .box-lid {
+.box-body.active .box-lid {
     -webkit-animation: box-lid 1s forwards ease-in-out;
     animation: box-lid 1s forwards ease-in-out;
 }
 
-.box-body:active .box-bowtie::before {
+.box-body.active .box-bowtie::before {
     -webkit-animation: box-bowtie-left 1.1s forwards ease-in-out;
     animation: box-bowtie-left 1.1s forwards ease-in-out;
 }
 
-.box-body:active .box-bowtie::after {
+.box-body.active .box-bowtie::after {
     -webkit-animation: box-bowtie-right 1.1s forwards ease-in-out;
     animation: box-bowtie-right 1.1s forwards ease-in-out;
-}
-
-.hidden_code {
-    display: none;
-}
-
-.container:active + .hidden_code {
-    display: block;
 }
 
 .box-body::after {
